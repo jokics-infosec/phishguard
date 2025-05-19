@@ -1,10 +1,122 @@
-# Credential files
-credentials-gmail.json
-token.json
+# --- General OS and IDE ignores ---
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Secrets and environment variables
-.env
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Python cache
+# VS Code/IDEA/editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.code-workspace
+
+# --- Python ignores ---
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.venv/
+venv/
+ENV/
+env/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+.cache
+*.sqlite3
+
+# --- Logs ---
+logs/
+**/logs/
+*.log
+*.out
+*.err
+
+# --- Environment and credentials ---
+.env
+.env.*
+!.env.example
+!.env.sample
+*.env.save
+*.envrc
+secrets/
+**/secrets/
+*.secret
+*.secrets
+credentials*.json
+*credentials*.json
+credentials/
+**/credentials/
+*.key
+*.pem
+*.crt
+*.csr
+*.pfx
+*.p12
+*.jks
+
+# --- Application configuration files ---
+config.yaml
+config.yml
+config.json
+settings.json
+settings.local.*
+*.local
+*.local.*
+*.bak
+*.tmp
+
+# --- Data files and output ---
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.dat
+*.cache
+*.pid
+*.pid.lock
+
+# --- Miscellaneous ---
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# --- Security project specific (expand as you add more tools) ---
+# YARA, rule, sig, dump, malware samples
+*.yara
+*.rules
+*.sig
+*.bin
+samples/
+malware/
+pcap/
+*.pcap
+*.pcapng
+
+# --- Do not ignore templates/examples ---
+!.env.example
+!.env.sample
+!config-template.yaml
+!requirements.txt
